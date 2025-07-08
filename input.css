@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+body{
+    @apply bg-blue-100 flex justify-center p-14
+}
+
+.container{
+    @apply bg-blue-200 p-8 w-90 rounded-xl shadow-2xl md:w-98   lg:w-150
+}
+
+#todo-form{
+    @apply flex gap-2.5 mb-5 md:gap-10
+}
+
+#todo-input{
+    @apply flex p-2.5 rounded-[4px] border-2 md:w-60 lg:w-110
+}
+
+button{
+    @apply px-2.5 py-3.75 bg-green-400 rounded-[4px] text-white font-bold cursor-pointer  hover:bg-green-600
+}
+
+.todo-item{
+    @apply  py-3 px-2.5 border-b-2  flex justify-between items-center
+}
+
+.todo-item.completed {
+    @apply line-through text-gray-700 
+}
+
+.delete-btn{
+    @apply  bg-red-600 border-none  rounded-[5px] cursor-pointer  font-bold text-[20px] w-10 h-10 pt-1.25
+}
+
